@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "1113421d-d22c-440b-a460-c3c2316cf542",
+		"name": "Persistent_Jokes_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getJokeById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"success\": {\r\n    \"total\": 1\r\n  },\r\n  \"contents\": {\r\n    \"jokes\": [\r\n      {\r\n        \"category\": \"jod\",\r\n        \"title\": \"Joke of the day \",\r\n        \"description\": \"Joke of the day \",\r\n        \"background\": \"\",\r\n        \"date\": \"2019-01-23\",\r\n        \"joke\": {\r\n          \"title\": \"Courtship Signals\",\r\n          \"length\": \"83\",\r\n          \"clean\": \"1\",\r\n          \"racial\": \"0\",\r\n          \"date\": \"2019-01-23\",\r\n          \"id\": \"He3_WpaNfBV1Hs7zMLsR4QeF\",\r\n          \"text\": \"Q. Why shouldn't you marry a tennis player?\\r\\nA. Because Love means nothing to them.\"\r\n        }\r\n      }\r\n    ],\r\n    \"copyright\": \"2018-20 https://jokes.one\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/joke/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"joke",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllJokes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jokes/all-jokes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jokes",
+						"all-jokes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveJoke",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jokeid\": \"He3_WpaNfBV1Hs7zMLsR4QeF\",\r\n    \"date\": \"2019-01-23\",\r\n    \"title\": \"Courtship Signals\",\r\n    \"text\": \"Q. Why shouldn't you marry a tennis player?\\r\\nA. Because Love means nothing to them.\",\r\n    \"racial\": \"0\",\r\n    \"category\": \"jod\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jokes/save-joke",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jokes",
+						"save-joke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateJoke",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jokes/update-joke/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jokes",
+						"update-joke",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteJoke",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jokes/delete-joke/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jokes",
+						"delete-joke",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

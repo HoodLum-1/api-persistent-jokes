@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+jokes:
+  api:
+    api-key: dunno
+    cron: 0 0 0 ? * * *
+    baseUrl: https://api.jokes.one
+    jokeOfTheDay: /jod
+    jokes: /joke/list
+spring:
+  actives:
+    active: dev
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  Datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jokes
+    username: root
+    password:
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+
+

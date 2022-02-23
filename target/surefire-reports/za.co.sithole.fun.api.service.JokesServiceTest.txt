@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: za.co.sithole.fun.api.service.JokesServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.624 s <<< FAILURE! - in za.co.sithole.fun.api.service.JokesServiceTest
+testJokeOfTheDay  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "za.co.sithole.fun.api.dto.jod.JokeOfTheDayResponse.getSuccess()" because "jok" is null
+	at za.co.sithole.fun.api.service.JokesServiceTest.testJokeOfTheDay(JokesServiceTest.java:40)
+
