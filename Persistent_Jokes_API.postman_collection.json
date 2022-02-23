@@ -1,0 +1,49 @@
+{
+  "info": {
+    "_postman_id": "6700d1fa-a353-46e9-9746-8d166dac7af0",
+    "name": "Persistent_Jokes_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "JokeOfTheDay",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/jokes-api/jod",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "jokes-api",
+            "jod"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Jokes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/jokes-api/jokes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "jokes-api",
+            "jokes"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

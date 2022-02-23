@@ -2,26 +2,15 @@ package za.co.sithole.fun.application.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
-import za.co.sithole.fun.api.dto.Joke;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import za.co.sithole.fun.application.dto.JokeDto;
-import za.co.sithole.fun.application.persistence.entity.JokeEntity;
-import za.co.sithole.fun.application.persistence.repository.JokeRepository;
-import za.co.sithole.fun.application.service.JokeService;
-
-import java.util.List;
-
-import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
-import za.co.sithole.fun.api.dto.Joke;
-import za.co.sithole.fun.application.dto.JokeDto;
-import za.co.sithole.fun.application.persistence.entity.JokeEntity;
-import za.co.sithole.fun.application.persistence.repository.JokeRepository;
 import za.co.sithole.fun.application.service.JokeService;
 
 import java.util.List;

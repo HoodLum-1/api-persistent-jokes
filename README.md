@@ -20,6 +20,8 @@ Spring boot application to retrieve jokes from Jokes API ONE and make them persi
 ## ☸ API
 - The API is used to consume Joke of the day from with the request URL: Copyright ©`https://api.jokes.one/jod` from Copyright ©`2019-20 https://jokes.one`
 - This uses a scheduler to get the joke of the day (JOD) from the joke API and store it a SQL database
+- A controller for the API has been added for convenience to get the jokes without waiting for the scheduler
+
 
 ## 🧰 Application
 - Used to create your own jokes and store in SQL database
@@ -39,11 +41,11 @@ The above can be done in two way: Using Swagger or Postman Collection
 
 ### Swagger 2
 - After successfully starting the application.
-- Navigate to `http://localhost:5000/swagger-ui.html` to see and try out the available rest endpoints.
+- Navigate to `http://localhost:5000/swagger-ui.html` to see and try out the available rest endpoints for both the application and API.
 
 ### Postman <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> 
 - After successfully starting the application.
-- Open Postman and import the `Persistent_Jokes.postman_collection.json`
+- Import the `Persistent_Jokes.postman_collection.json` for the application request calls
 - Gives you the following:
     - GET methods
         - getJokeById
@@ -54,6 +56,11 @@ The above can be done in two way: Using Swagger or Postman Collection
         - updateJoke
     - DELETE method 
         - deleteJoke
+- Import `Persistent_Jokes_API.postman_collection.json` for the API request calls
+- Gives you the following:
+    - GET methods
+        - JokeOfTheDay
+        - Jokes
   
   ## 📝 License
   
