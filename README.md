@@ -63,6 +63,10 @@ The above can be done in two way: Using Swagger or Postman Collection
         - Jokes
             - Requires a paid api token from api.jokes.one whihc should be placed in the configuration file to execute this method
   
+  ## 🧪 Unit Tests
+   - Run `JokesServiceTest` file to execute unit tests which use the H2 database
+   - The tests also use sample data under the `resources` directory for `jod` and `jokes`
+   
   ## 📝 License
   
   Copyright © 2022 [Malesela Sithole](https://github.com/HoodLum-1).<br />
