@@ -3,7 +3,7 @@ server:
 
 jokes:
   api:
-    api-key: dunno
+    api-key: <Insert api-key here>
     cron: 0 0 0 ? * * *
     baseUrl: https://api.jokes.one
     jokeOfTheDay: /jod
