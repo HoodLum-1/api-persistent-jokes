@@ -61,6 +61,7 @@ The above can be done in two way: Using Swagger or Postman Collection
     - GET methods
         - JokeOfTheDay
         - Jokes
+            - Requires a paid api token from api.jokes.one whihc should be placed in the configuration file to execute this method
   
   ## 📝 License
   
