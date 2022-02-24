@@ -61,12 +61,12 @@ The above can be done in two way: Using Swagger or Postman Collection
     - GET methods
         - JokeOfTheDay
         - Jokes
-            - Requires a paid api token from api.jokes.one whihc should be placed in the configuration file to execute this method
-  
+            - Requires a paid api token from api.joke.one which should be placed in the configuration file to execute this get request
+        
   ## 🧪 Unit Tests
    - Run `JokesServiceTest` file to execute unit tests which use the H2 database
-   - The tests also use sample data under the `resources` directory for `jod` and `jokes`
-   
+   - The tests also use sample data under the `resources` directory for `jod` and `jokes` 
+  
   ## 📝 License
   
   Copyright © 2022 [Malesela Sithole](https://github.com/HoodLum-1).<br />

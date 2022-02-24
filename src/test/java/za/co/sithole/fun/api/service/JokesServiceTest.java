@@ -3,7 +3,6 @@ package za.co.sithole.fun.api.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
-
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -17,8 +16,9 @@ import za.co.sithole.fun.application.persistence.repository.JokeRepository;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 
 class JokesServiceTest {
 
@@ -33,12 +33,6 @@ class JokesServiceTest {
 
     @InjectMocks
     private JokesService jokesService = new JokesService(restTemplate, apiProperties, jokeRepository);
-
-    @Test
-    void testJokeOfTheDay() {
-        var jok = jokesService.getJokeOfTheDay();
-        assertEquals(1, jok.getSuccess().getTotal(), "Number of jokes should be 1");
-    }
 
     @Test
     public void testJokeOfTheDay_from_mocked_response() {
